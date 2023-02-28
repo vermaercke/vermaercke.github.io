@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        
+        <meta charset="UTF=8">
+        <title>Contacto-Vermont</title>
+        <link rel="stylesheet" href="..\css\reset.css">
+        <link rel="stylesheet" href="..\css\contactos.css">
+
+    </head> 
+
+    <body>
+        <header>
+         
+            <div class="caja">
+                    <img class="logo100" src="..\imagenes portada\logo.jpg.png" 
+                    alt="Logo Inmobiliaria VerMont">
+                    <nav>
+                        <ul>
+                            <li><a href="..\index.html">HOME</a></li>
+                            <li><a href= "..\html\Propiedades.html">VENTA</a></li>
+                            <li><a href= "..\html\alquiler.html">ALQUILER</a></li>
+                            <li><a href= "..\html\tasaciones.html">TASACIONES</a></li>
+                            <li><a href= "..\html\empresa.html">EMPRESA</a></li>
+                            <li><a href= "..\html\contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+            </div>
+        </header>
+
+        <main>
+            
+
+            <section id="pantalla-dividida"> 
+                <div class="izquierdo">
+                    <form id="form" action="https://formsubmit.co/bb621cf02d3d1c93dea152e0ba26b9a8" method="POST">
+                        <label for="name">Nombre y Apellido<span>*</span></label>
+                        <input type="text" name="name" required  id="name" class="input-padron" required>
+        
+                        <label for="email">E-mail<span>*</span></label>
+                        <input type="email" name="email"  id="email" class="input-padron" required>
+        
+                        <label for="telefono">Telefono<span>*</span></label>
+                        <input name="telefono" type="text" id="telefono" class="input-padron" required>
+        
+                        <label for="message">Mensaje</label>
+                        <textarea cols="68" rows="10" id="message" name="message" class="input-padron"></textarea>
+
+                        <!--<button type="submit" value="Enviar Formulario" class="enviar">Enviar</button> -->
+
+                        
+                        
+        
+                        <fieldset>
+                            
+                            <legend>¿cómo le gustaria que lo contactemos?</legend>
+        
+                            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">E-mail</label>
+                            
+        
+                            <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                            
+        
+                            <label for="radio-Whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-Whatsapp">WhatsApp</label>
+                            
+                            <legend>¿En cúal horario prefiere ser atendido?</legend>
+                            <select>
+                                <option>9 - 12:30 Hs</option>
+                                <option>13:30 - 18:00 Hs</option>
+                            </select>
+
+                            <label class="checkbox"><input type="checkbox" name="novedades">¿Le gustaria recibir novedades de nuestra Inmobiliaria Vermont?</label>
+        
+        
+                        <!--</fieldset> 
+                        <fieldset>-->
+                            
+                        </fieldset>
+                        
+                        
+                        
+                          
+                        <input type="submit" class="enviar" value="Enviar Formulario">
+
+                   
+                    </form>
+                    
+
+                    <!--<a href="mailto:vermaerckr@gmail.com" id="trucazo">email</a>-->
+
+
+                </div>
+                <div class="derecha"><img src="..\imagenes portada\maqueta-edificio.png" alt="pantalla-dividida"></div>
+
+            </section>
+        </main>
+ 
+        
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <img src="..\imagenes portada\logo.jpg.png" alt="icono">
+                        <p class="tel">Tel.: 15-6662-5317</p>
+                        <p class="tel2" >15-3363-7391</p>
+                        <p class="email">info@inmobiliariavermont.com.ar</p>
+                       
+                        
+                    </figure>
+               </div>
+             
+                <div class="box">
+                    
+                    <div>
+                        <a  href="https://www.facebook.com/agustin.vermaercke/">
+                        <img class="facebook" src="..\imagenes portada\facebook.png"alt="iconos"></a>
+                        <a href="https://www.instagram.com/agustinestebanvermaercke/">
+                        <img class="instagram" src="..\imagenes portada\instagram.png" alt="iconos"></a>
+                        <a href="https://web.whatsapp.com/"><img class="whatsapp"  
+                           src="..\imagenes portada\bxl-whatsapp-square.png"></a>
+                           
+
+                    </div>
+                </div>
+                <div class="box_direccion">
+                        
+                    <P>San Juan N°405 esq. Almirante Brown</P>
+                    <P>Florencio Varela</P>
+                    <p>Bs.As. Argentina.</p>
+                </div> 
+            </div>
+               <div class="grupo-2">
+                  <small>&copy; 2023 <b>Vermont</b> - todos los derechos reservados</small>
+               
+                </div>
+        </footer>
+
+        <!--<script>
+            const $form = document.querySelector('#form')
+            const $buttonMailto = document.querySelector('#trucazo')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            function handleSubmit(event) {
+                event.preventDefaut()
+                const form = new FormData(this)
+                
+                $buttonMailto.setAttribute('href',`mailto:vermaerckr@gmail.com?subjet=nombre ${form.get('name')} correo ${form.get('email')} telefono ${form.get('telefono')}&body=${form.get('message')}`)
+                
+                
+                
+                $buttonMailto.click()
+            }
+        </script>-->
+        
+   
+    </body>
+
+
+</html>
+      
